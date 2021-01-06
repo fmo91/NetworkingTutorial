@@ -8,12 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    init() {
+        super.init(nibName: String(describing: type(of: self)), bundle: .main)
     }
-
-
+    required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
 }
 
