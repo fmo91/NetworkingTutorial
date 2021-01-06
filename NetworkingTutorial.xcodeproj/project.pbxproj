@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		FA59243125A5EED5006D6FD5 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59242F25A5EED5006D6FD5 /* UserTableViewCell.swift */; };
 		FA59243225A5EED5006D6FD5 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA59243025A5EED5006D6FD5 /* UserTableViewCell.xib */; };
 		FA59243625A5EF1F006D6FD5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59243525A5EF1F006D6FD5 /* User.swift */; };
+		FA6644F625A5F55A00B36702 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6644F525A5F55A00B36702 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA59242F25A5EED5006D6FD5 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		FA59243025A5EED5006D6FD5 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		FA59243525A5EF1F006D6FD5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA6644F525A5F55A00B36702 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				77A3CF85B45D7296B6C4FDDF /* Pods-NetworkingTutorial.debug.xcconfig */,
 				CAD04E403D523F24EC71BF45 /* Pods-NetworkingTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +90,7 @@
 		FA59240D25A5EE19006D6FD5 /* NetworkingTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				FA6644F425A5F54E00B36702 /* Networking */,
 				FA59243425A5EF18006D6FD5 /* Model */,
 				FA59242525A5EE38006D6FD5 /* Application */,
 				FA59240E25A5EE19006D6FD5 /* AppDelegate.swift */,
@@ -142,6 +144,14 @@
 				FA59243525A5EF1F006D6FD5 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA6644F425A5F54E00B36702 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA6644F525A5F55A00B36702 /* NetworkingManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +275,7 @@
 				FA59240F25A5EE19006D6FD5 /* AppDelegate.swift in Sources */,
 				FA59241125A5EE19006D6FD5 /* SceneDelegate.swift in Sources */,
 				FA59243125A5EED5006D6FD5 /* UserTableViewCell.swift in Sources */,
+				FA6644F625A5F55A00B36702 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

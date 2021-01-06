@@ -19,6 +19,16 @@ final class UsersListViewController: ViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        NetworkingManager.getUsers { (result: Result<[User], Error>) in
+            switch result {
+            case .success(let users):
+                self.users = users
+                self.tableView.reloadData()
+            case .failure:
+                break
+            }
+        }
     }
 
 }
